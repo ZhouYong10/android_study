@@ -13,11 +13,13 @@
         <activity android:name=".radioandcheck.RadioButtonActivity" />
         <activity android:name=".radioandcheck.CheckBoxActivity" />
         <activity android:name=".events.FiveMethodsActivity" />
-        <activity android:name=".events.methods.EventsMethodsActivity"></activity>
-        <activity android:name=".fragment.StaticFragmentActivity">
+        <activity android:name=".events.methods.EventsMethodsActivity" />
+        <activity android:name=".fragment.StaticFragmentActivity"></activity>
+        <activity android:name=".fragment.DynamicFragmentActivity">
 
         </activity>
-        <activity android:name=".fragment.DynamicFragmentActivity">
+        <activity android:name=".fragment.bottommenudemo1.BottomMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
