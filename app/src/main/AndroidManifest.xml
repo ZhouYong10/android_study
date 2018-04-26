@@ -9,35 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".radioandcheck.RadioButtonActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".radioandcheck.CheckBoxActivity">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
-        <activity android:name=".events.FiveMethodsActivity">
-
-        </activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".radioandcheck.RadioButtonActivity"></activity>
+        <activity android:name=".radioandcheck.CheckBoxActivity"></activity>
+        <activity android:name=".events.FiveMethodsActivity"></activity>
         <activity android:name=".events.methods.EventsMethodsActivity">
+
+        </activity>
+        <activity android:name=".fragment.StaticFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
