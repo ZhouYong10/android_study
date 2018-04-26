@@ -9,14 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".radioandcheck.RadioButtonActivity"></activity>
-        <activity android:name=".radioandcheck.CheckBoxActivity"></activity>
-        <activity android:name=".events.FiveMethodsActivity"></activity>
-        <activity android:name=".events.methods.EventsMethodsActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".radioandcheck.RadioButtonActivity" />
+        <activity android:name=".radioandcheck.CheckBoxActivity" />
+        <activity android:name=".events.FiveMethodsActivity" />
+        <activity android:name=".events.methods.EventsMethodsActivity"></activity>
+        <activity android:name=".fragment.StaticFragmentActivity">
 
         </activity>
-        <activity android:name=".fragment.StaticFragmentActivity">
+        <activity android:name=".fragment.DynamicFragmentActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
