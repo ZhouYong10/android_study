@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:adnroid="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    adnroid:layout_width="match_parent"
+    adnroid:layout_height="match_parent"
+    adnroid:orientation="vertical"
+    tools:context=".radioandcheck.CheckBoxActivity">
+
+    <TextView
+        adnroid:layout_width="match_parent"
+        adnroid:layout_height="wrap_content"
+        adnroid:text="选择你喜欢的水果："
+        adnroid:textSize="23sp"/>
+
+    <CheckBox
+        adnroid:id="@+id/checkbox_banana"
+        adnroid:layout_width="wrap_content"
+        adnroid:layout_height="wrap_content"
+        adnroid:text="香蕉"
+        adnroid:checked="true"/>
+
+    <CheckBox
+        adnroid:id="@+id/checkbox_apple"
+        adnroid:layout_width="wrap_content"
+        adnroid:layout_height="wrap_content"
+        adnroid:text="苹果"/>
+
+    <CheckBox
+        adnroid:id="@+id/checkbox_boluo"
+        adnroid:layout_width="wrap_content"
+        adnroid:layout_height="wrap_content"
+        adnroid:text="菠萝"/>
+
+    <Button
+        adnroid:id="@+id/btn_commit"
+        adnroid:layout_width="wrap_content"
+        adnroid:layout_height="wrap_content"
+        adnroid:text="提交"/>
+</LinearLayout>
