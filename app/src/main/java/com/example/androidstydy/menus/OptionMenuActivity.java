@@ -1,15 +1,19 @@
 package com.example.androidstydy.menus;
 
+import android.app.ActionBar;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.androidstydy.R;
 
 public class OptionMenuActivity extends AppCompatActivity {
+    public static final String TAG = OptionMenuActivity.class.getName();
 
     private final int RED = 110;
     private final int GREEN = 111;
@@ -27,10 +31,23 @@ public class OptionMenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_option_menu);
 
         tv_text = findViewById(R.id.content_msg);
+        
+        getSupportActionBar().addOnMenuVisibilityListener(new android.support.v7.app.ActionBar.OnMenuVisibilityListener() {
+            @Override
+            public void onMenuVisibilityChanged(boolean isVisible) {
+                if (isVisible) {
+                    Log.d(TAG, "onMenuVisibilityChanged: 选项菜单打开了。");
+                } else {
+                    Log.d(TAG, "onMenuVisibilityChanged: 选项菜单关闭了。");
+                }
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+        Log.d(TAG, "onCreateOptionsMenu: 这个方法用户初始化选项菜单");
+
         menu.add(1, RED, 4, "红色");
         menu.add(1, GREEN, 2, "绿色");
         menu.add(1, BLUE, 3, "蓝色");
@@ -39,11 +56,12 @@ public class OptionMenuActivity extends AppCompatActivity {
         menu.add(1, CYAN, 6, "蓝绿色");
         menu.add(1, BLACK, 7, "黑色");
 
-        return true;
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        Log.d(TAG, "onOptionsItemSelected: 你点击了 " + item.getTitle());
         switch (item.getItemId()) {
             case RED:
                 tv_text.setTextColor(Color.RED);
@@ -69,4 +87,32 @@ public class OptionMenuActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    /*
+    * 测试发现，选项菜单关闭时，并没有回调该方法，具体原因暂时不知
+    * 下面提供一种检测选项菜单打开和关闭状态的方法：
+    * getSupportActionBar().addOnMenuVisibilityListener()
+    * 通过上面的方式给选项菜单设置监听器
+    * */
+    @Override
+    public void onOptionsMenuClosed(Menu menu) {
+        Log.d(TAG, "onOptionsMenuClosed: 选项菜单关闭时调用这个方法");
+        Toast.makeText(this, "选项菜单关闭时调用这个方法", Toast.LENGTH_SHORT).show();
+        super.onOptionsMenuClosed(menu);
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        Log.d(TAG, "onPrepareOptionsMenu: 选项菜单显示前调用该方法，可在这里进行菜单的调整");
+
+        return super.onPrepareOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onMenuOpened(int featureId, Menu menu) {
+        Log.d(TAG, "onMenuOpened: 选项菜单打开了");
+        return super.onMenuOpened(featureId, menu);
+    }
+
+
 }
