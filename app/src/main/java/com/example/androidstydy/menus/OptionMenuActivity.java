@@ -52,9 +52,9 @@ public class OptionMenuActivity extends AppCompatActivity {
         menu.add(1, GREEN, 2, "绿色");
         menu.add(1, BLUE, 3, "蓝色");
         menu.add(1, YELLOW, 1, "黄色");
-        menu.add(1, GRAY, 5, "灰色");
-        menu.add(1, CYAN, 6, "蓝绿色");
-        menu.add(1, BLACK, 7, "黑色");
+        menu.add(2, GRAY, 5, "灰色");
+        menu.add(2, CYAN, 6, "蓝绿色");
+        menu.add(2, BLACK, 7, "黑色");
 
         return super.onCreateOptionsMenu(menu);
     }

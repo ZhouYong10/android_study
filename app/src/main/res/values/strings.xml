@@ -9,4 +9,7 @@
     <string name="tab_menu_pay">我的</string>
     <string name="tab_menu_profile">信息</string>
     <string name="tab_menu_alert">提醒</string>
+    <string name="font_red">红色选项</string>
+    <string name="font_green">绿色选项</string>
+    <string name="font_blue">蓝色选项</string>
 </resources>
