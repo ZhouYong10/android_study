@@ -18,14 +18,16 @@
         <activity android:name=".fragment.DynamicFragmentActivity" />
         <activity
             android:name=".fragment.bottommenudemo1.BottomMenuActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".fragment.bottommenudemo2.BottomMenuActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+        <activity
+            android:name=".fragment.bottommenudemo3.BottomMenuActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
-        <activity android:name=".fragment.bottommenudemo3.BottomMenuActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".menus.OptionMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
