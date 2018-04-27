@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment.bottommenudemo3.SimpleFragment">
+
+    <Button
+        android:id="@+id/btn_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一个显示消息"/>
+
+    <Button
+        android:id="@+id/btn_two"
+        android:text="第二个显示消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_three"
+        android:text="第三个显示消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_four"
+        android:text="第四个显示消息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
