@@ -70,12 +70,13 @@ public class BottomMenuActivity extends AppCompatActivity implements View.OnClic
     public void onClick(View v) {
         FragmentTransaction fTransaction = fManager.beginTransaction();
         hideAllFragment(fTransaction);
+        Bundle bundle = new Bundle();
         switch (v.getId()){
             case R.id.txt_channel:
                 setSelected();
                 txt_channel.setSelected(true);
+                txt_topbar.setText(R.string.tab_menu_alert);
                 if(fg1 == null){
-                    Bundle bundle = new Bundle();
                     bundle.putString("txt_content", "第一个Fragment");
                     fg1 = new MyFragment();
                     fg1.setArguments(bundle);
@@ -87,8 +88,8 @@ public class BottomMenuActivity extends AppCompatActivity implements View.OnClic
             case R.id.txt_message:
                 setSelected();
                 txt_message.setSelected(true);
+                txt_topbar.setText(R.string.tab_menu_profile);
                 if(fg2 == null){
-                    Bundle bundle = new Bundle();
                     bundle.putString("txt_content", "第二个Fragment");
                     fg2 = new MyFragment();
                     fg2.setArguments(bundle);
@@ -100,8 +101,8 @@ public class BottomMenuActivity extends AppCompatActivity implements View.OnClic
             case R.id.txt_better:
                 setSelected();
                 txt_better.setSelected(true);
+                txt_topbar.setText(R.string.tab_menu_pay);
                 if(fg3 == null){
-                    Bundle bundle = new Bundle();
                     bundle.putString("txt_content", "第三个Fragment");
                     fg3 = new MyFragment();
                     fg3.setArguments(bundle);
@@ -113,8 +114,8 @@ public class BottomMenuActivity extends AppCompatActivity implements View.OnClic
             case R.id.txt_setting:
                 setSelected();
                 txt_setting.setSelected(true);
+                txt_topbar.setText(R.string.tab_menu_setting);
                 if(fg4 == null){
-                    Bundle bundle = new Bundle();
                     bundle.putString("txt_content", "第四个Fragment");
                     fg4 = new MyFragment();
                     fg4.setArguments(bundle);
