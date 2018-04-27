@@ -24,11 +24,12 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".fragment.bottommenudemo3.BottomMenuActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
-        <activity android:name=".menus.OptionMenuActivity">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity android:name=".menus.OptionMenuActivity"></activity>
+        <activity android:name=".menus.ContextMenuActivity">
 
         </activity>
-        <activity android:name=".menus.ContextMenuActivity">
+        <activity android:name=".menus.SubMenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

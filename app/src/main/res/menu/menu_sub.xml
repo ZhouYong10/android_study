@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/sub_menu_one" android:title="父菜单一">
+       <menu>
+           <group android:checkableBehavior="none">
+               <item android:id="@+id/one_one" android:title="子菜单一"/>
+               <item android:id="@+id/one_two" android:title="子菜单二"/>
+               <item android:id="@+id/one_three" android:title="子菜单三"/>
+           </group>
+       </menu>
+   </item>
+    <item android:id="@+id/sub_menu_two" android:title="父菜单二">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item android:id="@+id/two_one" android:title="子菜单一"/>
+                <item android:id="@+id/two_two" android:title="子菜单二"/>
+                <item android:id="@+id/two_three" android:title="子菜单三"/>
+            </group>
+        </menu>
+    </item>
+</menu>

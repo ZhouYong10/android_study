@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".menus.ContextMenuActivity">
+    tools:context=".menus.SubMenuActivity">
 
     <TextView
-        android:id="@+id/context_menu"
+        android:id="@+id/sub_menu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:text="长按我显示菜单"
-        android:gravity="center"
-        android:textSize="16sp"/>
+        android:text="长按我显示菜单（子菜单示例）"
+        android:textSize="18sp"
+        android:gravity="center"/>
 </LinearLayout>
