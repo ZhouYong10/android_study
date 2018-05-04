@@ -25,11 +25,12 @@
         <activity
             android:name=".fragment.bottommenudemo3.BottomMenuActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-        <activity android:name=".menus.OptionMenuActivity"></activity>
-        <activity android:name=".menus.ContextMenuActivity">
+        <activity android:name=".menus.OptionMenuActivity" />
+        <activity android:name=".menus.ContextMenuActivity"></activity>
+        <activity android:name=".menus.SubMenuActivity">
 
         </activity>
-        <activity android:name=".menus.SubMenuActivity">
+        <activity android:name=".menus.PopupMenuActivity" android:label="PopupMenu弹出式菜单">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
