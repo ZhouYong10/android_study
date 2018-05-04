@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".drawer.OneDrawerActivity">
+
+    <TextView
+        android:id="@+id/menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        tools:drawableLeft="@mipmap/iv_menu_laert"
+        android:drawablePadding="6dp"
+        tools:text="这里是菜单选项"
+        android:textColor="#ffffff"
+        android:padding="6dp"/>
+</RelativeLayout>
