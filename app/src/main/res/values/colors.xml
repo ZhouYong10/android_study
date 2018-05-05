@@ -18,4 +18,9 @@
     <color name="text_topbar">#694E42</color>
     <color name="div_white">#E5E5E5</color>
     <color name="count_bg">#EF4836</color>
+
+
+    <color name="blue">#0000ff</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#ffff00</color>
 </resources>

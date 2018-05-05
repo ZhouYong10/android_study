@@ -27,14 +27,17 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".menus.OptionMenuActivity" />
         <activity android:name=".menus.ContextMenuActivity" />
-        <activity android:name=".menus.SubMenuActivity"></activity>
+        <activity android:name=".menus.SubMenuActivity" />
         <activity
             android:name=".menus.PopupMenuActivity"
-            android:label="PopupMenu弹出式菜单">
+            android:label="PopupMenu弹出式菜单"></activity>
+        <activity
+            android:name=".drawer.OneDrawerActivity"
+            android:label="DrawerLayout单个侧滑菜单">
 
         </activity>
-        <activity android:name=".drawer.OneDrawerActivity"
-            android:label="DrawerLayout单个侧滑菜单">
+        <activity android:name=".drawer.twodrawer.TwoDrawerActivity"
+            android:label="DrawerLayout左右侧滑菜单示例">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
