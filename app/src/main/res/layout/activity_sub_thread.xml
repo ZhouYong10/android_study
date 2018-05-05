@@ -11,7 +11,7 @@
         android:id="@+id/etNum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="请输入上限"/>
+        android:hint="请输入计算质数的上限"/>
 
     <Button
         android:layout_width="match_parent"
