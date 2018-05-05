@@ -33,13 +33,16 @@
             android:label="PopupMenu弹出式菜单" />
         <activity
             android:name=".drawer.OneDrawerActivity"
-            android:label="DrawerLayout单个侧滑菜单"></activity>
+            android:label="DrawerLayout单个侧滑菜单" />
         <activity
             android:name=".drawer.twodrawer.TwoDrawerActivity"
-            android:label="DrawerLayout左右侧滑菜单示例">
+            android:label="DrawerLayout左右侧滑菜单示例"></activity>
+        <activity android:name=".handler.MainThreadActivity"
+            android:label="Handler消息传递机制，写在主线程中的Handler">
 
         </activity>
-        <activity android:name=".handler.MainThreadActivity">
+        <activity android:name=".handler.SubThreadActivity"
+            android:label="Handler消息传递机制，写在子线程中的Handler">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
